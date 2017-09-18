@@ -2,8 +2,9 @@ machine:
   python:
     version: 3.6.2
 test:
+  pre:
+    - pip install --user pipenv
   override:
-    - python install --user pipenv
     - pipenv install --dev
     - pipenv run pytest --junitxml=.pytest/junit.xml
   post:
