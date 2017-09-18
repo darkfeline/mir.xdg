@@ -1,9 +1,10 @@
 machine:
   python:
     version: 3.6.2
+dependencies:
+  post:
+    - pip install pipenv
 test:
-  pre:
-    - pip install --user pipenv
   override:
     - pipenv install --dev
     - pipenv run pytest --junitxml=.pytest/junit.xml
