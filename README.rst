@@ -14,4 +14,4 @@ mir.protology README
    :target: http://mir-protology.readthedocs.io/en/latest/
    :alt: Latest Documentation
 
-Template project for Python projects under Project Mir.
+Template project for Python projects under the mir namespace.
