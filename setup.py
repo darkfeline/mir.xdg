@@ -15,6 +15,7 @@
 import re
 from setuptools import setup
 
+
 def find_version(path):
     with open(path) as f:
         text = f.read()
@@ -23,6 +24,7 @@ def find_version(path):
     if version_match:
         return version_match.group(1)
     raise RuntimeError("Unable to find version string.")
+
 
 setup(
     name='mir.protology',
