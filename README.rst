@@ -15,3 +15,7 @@ mir.protology README
    :alt: Latest Documentation
 
 Template project for Python projects under the mir namespace.
+
+To view API documentation, run::
+
+  $ pipenv run pydoc mir.protology
