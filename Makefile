@@ -1,5 +1,5 @@
 PYTHON := pipenv run python
-PYTHONPATH := $(CURDIR)
+export PYTHONPATH := $(CURDIR)
 
 .PHONY: all
 all:
@@ -17,7 +17,9 @@ wheel:
 	$(PYTHON) setup.py bdist_wheel
 
 .PHONY: html
-html: doc/mir.protology.html
+html: \
+ $(shell find mir -name __init__.py -printf "%h.html\n" | sed 's:/:.:g; s:^:doc/:') \
+ $(shell find mir -name '*.py' ! -name __init__.py | sed 's:/:.:g; s/\.py/\.html/; s:^:doc/:')
 
 doc/%.html: $(wildcard mir/**/*.py)
 	mkdir -p doc
