@@ -1,4 +1,5 @@
 PYTHON := pipenv run python
+PYTHONPATH := $(CURDIR)
 
 .PHONY: all
 all:
@@ -15,13 +16,20 @@ sdist:
 wheel:
 	$(PYTHON) setup.py bdist_wheel
 
+.PHONY: html
+html: doc/mir.protology.html
+
+doc/%.html: $(wildcard mir/**/*.py)
+	mkdir -p doc
+	cd doc && $(PYTHON) -m pydoc -w $(@F:%.html=%)
+
 .PHONY: TAGS
 TAGS:
 	ctags -e -R mir
 
 .PHONY: distclean
 distclean:
-	rm -rf build dist *.egg-info
+	rm -rf build dist doc *.egg-info
 	rm -f .coverage
 
 .PHONY: upload
