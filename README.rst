@@ -16,6 +16,30 @@ mir.protology README
 
 Template project for Python projects under the mir namespace.
 
-To view API documentation, run::
+Before running any other make command, run::
 
-  $ pipenv run pydoc mir.protology
+  $ make pipenv
+
+To build an installable wheel, run::
+
+  $ make wheel
+
+To build a source distribution, run::
+
+  $ make sdist
+
+To run tests, run::
+
+  $ make check
+
+To build docs, run::
+
+  $ make html
+
+To build a TAGS file, run::
+
+  $ make TAGS
+
+To clean up all built files, run::
+
+  $ make distclean
