@@ -13,3 +13,4 @@ __pycache__/
 
 # Test artifacts
 /.coverage
+/.coverage.*
