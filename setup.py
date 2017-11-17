@@ -44,5 +44,6 @@ setup(
     ],
 
     packages=['mir.protology'],
+    python_requires='~=3.6',
     install_requires=[],
 )
