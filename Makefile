@@ -37,7 +37,3 @@ distclean:
 .PHONY: upload
 upload: sdist wheel
 	$(PYTHON) -m twine upload --skip-existing dist/*
-
-.PHONY: pipenv
-pipenv:
-	pipenv install --dev

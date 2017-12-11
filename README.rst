@@ -18,7 +18,7 @@ Template project for Python projects under the mir namespace.
 
 Before running any other make command, run::
 
-  $ make pipenv
+  $ pipenv install --dev
 
 To build an installable wheel, run::
 
