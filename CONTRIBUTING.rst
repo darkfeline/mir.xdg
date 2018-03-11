@@ -3,7 +3,7 @@ Contributing
 
 Project is hosted on `GitHub`_.
 
-.. _GitHub: https://github.com/darkfeline/mir.protology
+.. _GitHub: https://github.com/darkfeline/mir.xdg
 
 Python code follows `PEP 8`_, including the first rule.
 

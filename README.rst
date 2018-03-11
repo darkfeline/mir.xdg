@@ -1,17 +1,17 @@
-mir.protology README
+mir.xdg README
 ====================
 
-.. image:: https://circleci.com/gh/darkfeline/mir.protology.svg?style=shield
-   :target: https://circleci.com/gh/darkfeline/mir.protology
+.. image:: https://circleci.com/gh/darkfeline/mir.xdg.svg?style=shield
+   :target: https://circleci.com/gh/darkfeline/mir.xdg
    :alt: CircleCI
-.. image:: https://codecov.io/gh/darkfeline/mir.protology/branch/master/graph/badge.svg
-   :target: https://codecov.io/gh/darkfeline/mir.protology
+.. image:: https://codecov.io/gh/darkfeline/mir.xdg/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/darkfeline/mir.xdg
    :alt: Codecov
-.. image:: https://badge.fury.io/py/mir.protology.svg
-   :target: https://badge.fury.io/py/mir.protology
+.. image:: https://badge.fury.io/py/mir.xdg.svg
+   :target: https://badge.fury.io/py/mir.xdg
    :alt: PyPI Release
-.. image:: https://readthedocs.org/projects/mir-protology/badge/?version=latest
-   :target: http://mir-protology.readthedocs.io/en/latest/
+.. image:: https://readthedocs.org/projects/mir-xdg/badge/?version=latest
+   :target: http://mir-xdg.readthedocs.io/en/latest/
    :alt: Latest Documentation
 
 Template project for Python projects under the mir namespace.
